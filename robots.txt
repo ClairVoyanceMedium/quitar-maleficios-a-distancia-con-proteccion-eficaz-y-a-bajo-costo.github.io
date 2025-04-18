@@ -1,42 +1,100 @@
-# Indique aux robots que toutes les pages peuvent être explorées, sauf restrictions spécifiées
+# Robots.txt optimizado para 2025 - Supera la excelencia
+# Diseñado para América del Sur, IA, Google IA, asistentes de voz y SEO avanzado
+# Sitio: https://clairvoyancemedium.github.io/quitar-maleficios-a-distancia-con-proteccion-eficaz-y-a-bajo-costo.github.io/
+# Última actualización: 18/04/2025 14:00 GMT
+# Nota: Validar con Google Search Console y robotstxt.org
+
+##########################
+# Permisos Generales     #
+##########################
 User-agent: *
-Disallow: /admin/
-Disallow: /tmp/
-Disallow: /private/
+Disallow: /privado/          # Directorios privados (ej. admin, scripts)
+Disallow: /temp/             # Carpetas temporales
+Disallow: /*?*               # Evita contenido duplicado (parámetros URL)
+Allow: /*.css$               # CSS para un renderizado óptimo (heredado por todos)
+Allow: /*.js$                # JS esencial (heredado por todos)
+Allow: /*.pdf$               # Permite PDFs estratégicos (ej. guías)
+Allow: /                     # Acceso por defecto
 
-# Bloquer des URL avec paramètres inutiles pour l'indexation
-Disallow: /*?debug=true
-Disallow: /*?preview=true
-
-# Permettre les fichiers nécessaires au bon affichage et fonctionnement
-Allow: /css/
-Allow: /js/
-Allow: /images/
-
-# Référencement des ressources multimédias
-Allow: *.png
-Allow: *.jpg
-Allow: *.webp
-Allow: *.css
-Allow: *.js
-
-# Fournir le chemin du fichier sitemap pour une meilleure indexation
-Sitemap: https://www.clairvoyancemedium.com/sitemap.xml
-
-# Autorisation pour les robots Google et Bing pour maximiser les campagnes publicitaires
+########################################
+# Googlebot (incluye Google IA 2025)   #
+########################################
 User-agent: Googlebot
-Allow: /
-User-agent: AdsBot-Google
-Allow: /
+Disallow: /privado/
+Disallow: /temp/
+Allow: /rituales/
+Allow: /proteccion/
+Allow: /quitar-maleficios/
+
+###########################################
+# Asistentes de Voz                      #
+###########################################
+User-agent: Googlebot-Voice
+Disallow: /privado/
+Disallow: /temp/
+Allow: /preguntas-frecuentes/
+Allow: /rituales-simples/
+Allow: /consejos/
+User-agent: Amazonbot        # Para Alexa
+Disallow: /privado/
+Disallow: /temp/
+Allow: /preguntas-frecuentes/
+Allow: /consejos/
+User-agent: Applebot         # Para Siri
+Disallow: /privado/
+Disallow: /temp/
+Allow: /preguntas-frecuentes/
+Allow: /consejos/
+
+###########################################
+# Bing (mercado sudamericano)            #
+###########################################
 User-agent: Bingbot
-Allow: /
+Disallow: /privado/
+Disallow: /temp/
 
-# Bloquer les robots nuisibles ou non désirés
-User-agent: BadBot
+#################################
+# Bloqueo de bots no deseados   #
+#################################
+User-agent: AhrefsBot
 Disallow: /
-User-agent: EvilScraper
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
 Disallow: /
 
-# Empêcher l'exploration des fichiers sensibles
-Disallow: /config/
-Disallow: /backup/
+##################################################
+# Socios y analizadores de Google                #
+##################################################
+User-agent: Mediapartners-Google
+Disallow: /privado/
+User-agent: AdsBot-Google
+Disallow: /privado/
+
+##################################################
+# Rastreadores IA emergentes (previsión 2025)   #
+##################################################
+User-agent: xAI-Crawler
+Disallow: /privado/
+User-agent: OpenAI-Crawler
+Disallow: /privado/
+User-agent: AnthropicBot
+Disallow: /privado/
+User-agent: PerplexityBot    # Rastreador IA relevante
+Disallow: /privado/
+
+##################################################
+# Optimización avanzada (prioridad móvil)       #
+##################################################
+User-agent: Googlebot-Mobile
+Disallow: /privado/
+Disallow: /temp/
+Allow: /rituales/
+Allow: /proteccion/
+Allow: /quitar-maleficios/
+
+##################
+# Sitemap y rastreo #
+##################
+Sitemap: https://clairvoyancemedium.github.io/quitar-maleficios-a-distancia-con-proteccion-eficaz-y-a-bajo-costo.github.io/sitemap.xml
+Crawl-delay: 0.5
