@@ -1,8 +1,8 @@
-# Robots.txt optimizado para 2025 - Supera la excelencia
-# Diseñado para América del Sur, IA, Google IA, asistentes de voz y SEO avanzado
+# Robots.txt optimizado al máximo para 2025 - Líder absoluto en América del Sur
+# Diseñado para SEO avanzado, IA, asistentes de voz y mercados sudamericanos
 # Sitio: https://clairvoyancemedium.github.io/quitar-maleficios-a-distancia-con-proteccion-eficaz-y-a-bajo-costo.github.io/
 # Última actualización: 18/04/2025 14:00 GMT
-# Nota: Validar con Google Search Console y robotstxt.org
+# Nota: Validar con Google Search Console, robotstxt.org y herramientas regionales (ej. SEMrush LatAm)
 
 ##########################
 # Permisos Generales     #
@@ -10,11 +10,14 @@
 User-agent: *
 Disallow: /privado/          # Directorios privados (ej. admin, scripts)
 Disallow: /temp/             # Carpetas temporales
+Disallow: /cache/            # Archivos de caché para rendimiento
 Disallow: /*?*               # Evita contenido duplicado (parámetros URL)
-Allow: /*.css$               # CSS para un renderizado óptimo (heredado por todos)
-Allow: /*.js$                # JS esencial (heredado por todos)
-Allow: /*.pdf$               # Permite PDFs estratégicos (ej. guías)
-Allow: /                     # Acceso por defecto
+Disallow: /login/            # Bloquea áreas de autenticación
+Allow: /*.css$               # CSS para renderizado óptimo
+Allow: /*.js$                # JS esencial para funcionalidad
+Allow: /*.pdf$               # PDFs estratégicos (ej. guías de rituales)
+Allow: /*.webp$              # Imágenes optimizadas para velocidad
+Allow: /                     # Acceso por defecto a páginas públicas
 
 ########################################
 # Googlebot (incluye Google IA 2025)   #
@@ -22,9 +25,26 @@ Allow: /                     # Acceso por defecto
 User-agent: Googlebot
 Disallow: /privado/
 Disallow: /temp/
+Disallow: /cache/
+Disallow: /login/
+Allow: /rituales/            # Rituales espirituales destacados
+Allow: /proteccion/          # Servicios de protección contra energías negativas
+Allow: /quitar-maleficios/   # Eliminación de maldiciones y maleficios
+Allow: /suerte/              # Atracción de buena suerte (popular en Sudamérica)
+
+########################################
+# Googlebot-Mobile (prioridad móvil)   #
+########################################
+User-agent: Googlebot-Mobile
+Disallow: /privado/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /login/
 Allow: /rituales/
 Allow: /proteccion/
 Allow: /quitar-maleficios/
+Allow: /suerte/
+Allow: /preguntas-frecuentes/ # Optimizado para búsquedas móviles rápidas
 
 ###########################################
 # Asistentes de Voz                      #
@@ -32,29 +52,49 @@ Allow: /quitar-maleficios/
 User-agent: Googlebot-Voice
 Disallow: /privado/
 Disallow: /temp/
+Disallow: /cache/
+Disallow: /login/
+Allow: /preguntas-frecuentes/ # Respuestas rápidas para Google Assistant
+Allow: /rituales-simples/     # Rituales accesibles para voz
+Allow: /consejos/             # Consejos prácticos para usuarios
+User-agent: Amazonbot         # Optimizado para Alexa
+Disallow: /privado/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /login/
 Allow: /preguntas-frecuentes/
 Allow: /rituales-simples/
 Allow: /consejos/
-User-agent: Amazonbot        # Para Alexa
+User-agent: Applebot          # Optimizado para Siri
 Disallow: /privado/
 Disallow: /temp/
+Disallow: /cache/
+Disallow: /login/
 Allow: /preguntas-frecuentes/
-Allow: /consejos/
-User-agent: Applebot         # Para Siri
-Disallow: /privado/
-Disallow: /temp/
-Allow: /preguntas-frecuentes/
+Allow: /rituales-simples/
 Allow: /consejos/
 
 ###########################################
-# Bing (mercado sudamericano)            #
+# Bing y otros motores (mercado LatAm)   #
 ###########################################
 User-agent: Bingbot
 Disallow: /privado/
 Disallow: /temp/
+Disallow: /cache/
+Disallow: /login/
+Allow: /rituales/
+Allow: /proteccion/
+Allow: /quitar-maleficios/
+User-agent: Baiduspider       # Relevante para comunidades asiáticas en Sudamérica
+Disallow: /privado/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /login/
+Allow: /rituales/
+Allow: /quitar-maleficios/
 
 #################################
-# Bloqueo de bots no deseados   #
+# Bloqueo de bots maliciosos    #
 #################################
 User-agent: AhrefsBot
 Disallow: /
@@ -62,39 +102,58 @@ User-agent: SemrushBot
 Disallow: /
 User-agent: MJ12bot
 Disallow: /
+User-agent: DotBot
+Disallow: /
+User-agent: PetalBot
+Disallow: /
+User-agent: Sogou
+Disallow: /
+User-agent: YandexBot
+Disallow: /              # Bloqueo total para bots no prioritarios en LatAm
 
 ##################################################
 # Socios y analizadores de Google                #
 ##################################################
 User-agent: Mediapartners-Google
 Disallow: /privado/
+Disallow: /login/
+Allow: /rituales/
+Allow: /proteccion/
 User-agent: AdsBot-Google
 Disallow: /privado/
+Disallow: /login/
+Allow: /quitar-maleficios/
+Allow: /suerte/
 
 ##################################################
 # Rastreadores IA emergentes (previsión 2025)   #
 ##################################################
-User-agent: xAI-Crawler
+User-agent: xAI-Crawler       # Soporte para Grok y xAI
 Disallow: /privado/
+Disallow: /login/
+Allow: /rituales/
+Allow: /quitar-maleficios/
 User-agent: OpenAI-Crawler
 Disallow: /privado/
+Disallow: /login/
 User-agent: AnthropicBot
 Disallow: /privado/
-User-agent: PerplexityBot    # Rastreador IA relevante
+Disallow: /login/
+User-agent: PerplexityBot     # IA emergente con relevancia global
 Disallow: /privado/
+Disallow: /login/
+User-agent: ClaudeBot        # Bot de Anthropic para IA avanzada
+Disallow: /privado/
+Disallow: /login/
 
 ##################################################
-# Optimización avanzada (prioridad móvil)       #
+# Optimización avanzada para Sudamérica          #
 ##################################################
-User-agent: Googlebot-Mobile
-Disallow: /privado/
-Disallow: /temp/
-Allow: /rituales/
-Allow: /proteccion/
-Allow: /quitar-maleficios/
+# Ritmo de rastreo ajustado para servidores ligeros (GitHub Pages)
+Crawl-delay: 1.0             # Reducido para servidores de baja capacidad
+Host: clairvoyancemedium.github.io # Canonicalización para SEO
 
 ##################
 # Sitemap y rastreo #
 ##################
 Sitemap: https://clairvoyancemedium.github.io/quitar-maleficios-a-distancia-con-proteccion-eficaz-y-a-bajo-costo.github.io/sitemap.xml
-Crawl-delay: 0.5
